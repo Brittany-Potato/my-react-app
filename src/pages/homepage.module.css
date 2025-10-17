@@ -1,6 +1,3 @@
-
-
-
 /** ~~~ Title ~~~ */
 
 .titleDiv {
@@ -8,7 +5,7 @@
     padding: 1%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: black;
     border: rgb(0, 255, 255) solid 2px;
     box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
@@ -19,6 +16,28 @@
     color: #3f99ad;
     text-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
         0 0 40px rgb(0, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.titleSub {
+    color: #3f99ad;
+    text-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+        0 0 40px rgb(0, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.titleTechStack {
+    color: #3f99ad;
+    text-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+        0 0 40px rgb(0, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5%;
 }
 
 /** ~~~ Card One ~~~ */
@@ -37,6 +56,9 @@
         0 0 40px rgb(0, 255, 255);
     overflow-y: auto;
     max-height: 60vh;
+    min-height: 60vh;
+    min-width: 90%;
+
 }
 
 .cardOneDiv p {
@@ -67,7 +89,195 @@
     color: #3f99ad;
     background-color: black;
     margin-top: 1%;
+    min-height: 60vh;
+    min-width: 90%;
+
 }
+
+/** ~~~ FREDRICK ~~~  */
+
+.fredrickCard {
+    padding: 1%;
+    border: rgb(0, 255, 255) solid 2px;
+    box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+        0 0 40px rgb(0, 255, 255);
+    overflow-y: auto;
+    max-height: 60vh;
+    min-height: 60vh;
+    color: #3f99ad;
+    background-color: black;
+    margin-top: 1%;
+}
+
+.chatWindow {
+    flex: 1;
+    /* This is KEY: makes the window fill all available space */
+    overflow-y: auto;
+    /* Makes it scrollable when content is too long */
+    min-height: 0;
+    /* A flexbox trick to make scrolling work correctly */
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Adds space between messages */
+    height: 35vh;
+}
+
+.chatForm {
+    display: flex;
+    /* Puts input and button side-by-side */
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.userMessage {
+    background-color: #333;
+    /* A neutral dark grey */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border-bottom-right-radius: 2px;
+    /* Chat bubble look on the other side */
+    max-width: 80%;
+    align-self: flex-end;
+    /* Aligns to the right */
+    word-wrap: break-word;
+}
+
+.botMessage {
+    background-color: rgba(63, 153, 173, 0.15);
+    /* Faint blue background */
+    color: #e0e0e0;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border-bottom-left-radius: 2px;
+    /* Gives it a "chat bubble" look */
+    max-width: 80%;
+    align-self: flex-start;
+    /* Aligns to the left */
+    word-wrap: break-word;
+}
+
+.sendButton {
+    background-color: #3f99ad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    min-width: 10%;
+    max-width: 20%;
+}
+
+.sendButtonCV {
+    background-color: #3f99ad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    min-width: 10%;
+    max-width: 20%;
+    display: flex;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sendButton:hover {
+    background-color: #61dafb;
+    /* Brighter on hover */
+}
+
+.sendButton:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.chatInput {
+    flex: 1;
+    /* Makes the input field take up most of the space */
+    background-color: #1c1c1c;
+    border: 1px solid #3f99ad;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.chatInput:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+    /* Adds a glow on focus */
+}
+
+/** ~~~ PROJECTS ~~~  */
+
+.projectsDiv {
+    padding: 1%;
+    border: rgb(0, 255, 255) solid 2px;
+    box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+        0 0 40px rgb(0, 255, 255);
+    overflow-y: auto;
+    max-height: 60vh;
+    min-height: 60vh;
+    background-color: black;
+    margin-top: 1%;
+}
+
+.contactDiv {
+    padding: 1%;
+    border: rgb(0, 255, 255) solid 2px;
+    box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+        0 0 40px rgb(0, 255, 255);
+    overflow-y: auto;
+    max-height: 60vh;
+    min-height: 60vh;
+    background-color: black;
+    margin-top: 1%;
+    width: 97%;
+}
+
+/* This is the corrected rule. It targets the <a> tags INSIDE .projectsDiv */
+.projectsDiv a {
+    color: #61dafb !important;
+    text-decoration: none !important;
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+}
+
+/* This is the corrected hover rule */
+.projectsDiv a:hover {
+    color: #fff !important;
+    text-decoration: underline !important;
+}
+
+/* This is the corrected visited rule */
+.projectsDiv a:visited {
+    color: #61dafb !important;
+}
+
+.listContact {
+    color: #61dafb !important;
+    font-size: 25px;
+    padding: 1%;
+}
+
+
+.listContact a {
+    text-decoration: none;
+    color: rgb(250, 201, 230) !important;
+
+}
+
 
 /** ~~~ SCROLLBAR ~~~ */
 
@@ -123,50 +333,96 @@
 
 @media (min-width: 900px) {
     .cardParent {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    padding: 1rem 0;
-}
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        padding: 1rem 0;
+    }
 
     .cardOneDiv {
-    background-color: black;
-    padding: 1%;
-    height: 50%;
-    width: 30%;
-    margin-top: 1%;
-    display: flex;
-    justify-content: flex-start;
-    /* align-items: center; */
-    flex-direction: column;
-    border: rgb(0, 255, 255) solid 2px;
-    box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
-        0 0 40px rgb(0, 255, 255);
-    overflow-y: auto;
-    max-height: 60vh;
-}
+        background-color: black;
+        padding: 1%;
+        height: 50%;
+        width: 30%;
+        margin-top: 1%;
+        display: flex;
+        justify-content: flex-start;
+        /* align-items: center; */
+        flex-direction: column;
+        border: rgb(0, 255, 255) solid 2px;
+        box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+            0 0 40px rgb(0, 255, 255);
+        overflow-y: auto;
+        max-height: 60vh;
+    }
 
-.titleDiv {
-    background-color: blueviolet;
-    padding: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    border: rgb(0, 255, 255) solid 2px;
-    box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
-        0 0 40px rgb(0, 255, 255);
-}
+    .titleDiv {
+        background-color: blueviolet;
+        padding: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        border: rgb(0, 255, 255) solid 2px;
+        box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+            0 0 40px rgb(0, 255, 255);
 
-.title {
-    color: #3f99ad;
-    text-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
-        0 0 40px rgb(0, 255, 255);
+    }
+
+    .contactDiv {
+        grid-column: span 2;
+    }
+
+    .title {
+        color: #3f99ad;
+        text-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+            0 0 40px rgb(0, 255, 255);
         font-size: 40px;
-}
+    }
 
-.cardTwo {
-    padding: 1%;
-    width: 30%;
-}
+    .titleSub {
+        color: #3f99ad;
+        text-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+            0 0 40px rgb(0, 255, 255);
+        font-size: 20px;
+    }
+
+    .titleTechStack {
+        color: #3f99ad;
+        text-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+            0 0 40px rgb(0, 255, 255);
+        font-size: 40px;
+    }
+
+    .cardTwo {
+        padding: 1%;
+        width: 0%;
+        display: flex;
+
+        justify-content: flex-start;
+
+        overflow-y: auto;
+        max-height: 60vh;
+
+    }
+
+    .projectsDiv {
+        padding: 1%;
+        width: 90%;
+        overflow-y: auto;
+        max-height: 60vh;
+    }
+
+    .cardTwo img {
+        width: 100%;
+        /* Makes the image fill the container's width */
+        height: auto;
+        /* Adjusts the height automatically to keep the aspect ratio */
+        display: block;
+        /* Good practice to remove any extra space below the image */
+    }
+
+    .sendButtonCV {
+        margin-top: 0%;
+    }
 }
