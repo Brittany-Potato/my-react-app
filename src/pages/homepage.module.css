@@ -1,0 +1,172 @@
+
+
+
+/** ~~~ Title ~~~ */
+
+.titleDiv {
+    background-color: blueviolet;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: rgb(0, 255, 255) solid 2px;
+    box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+        0 0 40px rgb(0, 255, 255);
+}
+
+.title {
+    color: #3f99ad;
+    text-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+        0 0 40px rgb(0, 255, 255);
+}
+
+/** ~~~ Card One ~~~ */
+
+.cardOneDiv {
+    background-color: black;
+    padding: 1%;
+    height: 50%;
+    width: 97%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: rgb(0, 255, 255) solid 2px;
+    box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+        0 0 40px rgb(0, 255, 255);
+    overflow-y: auto;
+    max-height: 60vh;
+}
+
+.cardOneDiv p {
+    font-weight: 700;
+}
+
+.techStackTitle {
+    /* margin-top: 80%; */
+    margin-left: 35%;
+    color: #3f99ad;
+    text-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+        0 0 40px rgb(0, 255, 255);
+}
+
+
+.techstackListDiv {
+    color: #3f99ad;
+}
+
+/** ~~~ GITHUB ~~~ */
+
+.cardTwo {
+    border: rgb(0, 255, 255) solid 2px;
+    box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+        0 0 40px rgb(0, 255, 255);
+    overflow-y: auto;
+    max-height: 60vh;
+    color: #3f99ad;
+    background-color: black;
+    margin-top: 1%;
+}
+
+/** ~~~ SCROLLBAR ~~~ */
+
+/* 1. The scrollbar itself */
+.cardOneDiv::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* 2. The track (the background the scrollbar moves along) */
+.cardOneDiv::-webkit-scrollbar-track {
+    background: #0d1117;
+    border-radius: 4px;
+}
+
+/* 3. The thumb (the draggable part of the scrollbar) */
+.cardOneDiv::-webkit-scrollbar-thumb {
+    background-color: #3f99ad;
+    border-radius: 4px;
+    border: 1px solid #0d1117;
+}
+
+/* 4. The thumb on hover */
+.cardOneDiv::-webkit-scrollbar-thumb:hover {
+    background-color: #61dafb;
+}
+
+/* 1. The scrollbar itself */
+.cardTwo::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* 2. The track (the background the scrollbar moves along) */
+.cardTwo::-webkit-scrollbar-track {
+    background: #0d1117;
+    border-radius: 4px;
+}
+
+/* 3. The thumb (the draggable part of the scrollbar) */
+.cardTwo::-webkit-scrollbar-thumb {
+    background-color: #3f99ad;
+    border-radius: 4px;
+    border: 1px solid #0d1117;
+}
+
+/* 4. The thumb on hover */
+.cardTwo::-webkit-scrollbar-thumb:hover {
+    background-color: #61dafb;
+}
+
+
+
+/** ~~~ RESPONSIVE - 500 ~~~ */
+
+@media (min-width: 900px) {
+    .cardParent {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+    .cardOneDiv {
+    background-color: black;
+    padding: 1%;
+    height: 50%;
+    width: 30%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    flex-direction: column;
+    border: rgb(0, 255, 255) solid 2px;
+    box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+        0 0 40px rgb(0, 255, 255);
+    overflow-y: auto;
+    max-height: 60vh;
+}
+
+.titleDiv {
+    background-color: blueviolet;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: rgb(0, 255, 255) solid 2px;
+    box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+        0 0 40px rgb(0, 255, 255);
+}
+
+.title {
+    color: #3f99ad;
+    text-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+        0 0 40px rgb(0, 255, 255);
+        font-size: 40px;
+}
+
+.cardTwo {
+    padding: 1%;
+    width: 30%;
+}
+}
