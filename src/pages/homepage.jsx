@@ -127,7 +127,7 @@ export default function homepage() {
         <div>
             <div className={styles.titleDiv}>
                 <h2 className={styles.title}>BrittanyIT - Tato Codes</h2>
-                <a className={styles.sendButtonCV} href="cv.pdf" download="cv.pdf" target="_blank" rel="noopner noreferrer">Resume Download</a>
+                <a className={styles.sendButtonCV} href="/documents/cv.pdf" download="cv.pdf" target="_blank" rel="noopner noreferrer">Resume Download</a>
             </div>
             <div className={styles.cardParent}>
                 <div className={styles.cardOneDiv}>

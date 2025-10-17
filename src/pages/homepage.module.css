@@ -435,12 +435,14 @@
 
 /* This styles the new image */
 .contactImage {
-    width: 40%;                /* Adjust the size of the image as needed */
+    width: 30%;                /* Adjust the size of the image as needed */
     height: auto;              /* Maintains aspect ratio */
     border-radius: 10px;       /* Optional: rounds the corners */
 
     /* Optional: Add a matching glow effect */
-    box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
-        0 0 40px rgb(0, 255, 255);
+        border: rgb(0, 255, 255) solid 4px;
+        box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+            0 0 40px rgb(0, 255, 255);
+
 }
 }
