@@ -327,6 +327,22 @@
     background-color: #61dafb;
 }
 
+.contactImage {
+    width: 50%;                /* Adjust the size of the image as needed */
+    height: auto;              /* Maintains aspect ratio */
+    border-radius: 10px; 
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+
+    /* Optional: Add a matching glow effect */
+        border: rgb(0, 255, 255) solid 4px;
+        box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+            0 0 40px rgb(0, 255, 255);
+
+}
+
 
 
 /** ~~~ RESPONSIVE - 500 ~~~ */
