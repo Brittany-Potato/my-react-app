@@ -55,10 +55,9 @@
     box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
         0 0 40px rgb(0, 255, 255);
     overflow-y: auto;
-    max-height: 60vh;
-    min-height: 60vh;
+    height: fit-content;
     min-width: 90%;
-
+    margin-bottom: 1%;
 }
 
 .cardOneDiv p {
@@ -85,12 +84,10 @@
     box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
         0 0 40px rgb(0, 255, 255);
     overflow-y: auto;
-    max-height: 60vh;
     color: #3f99ad;
     background-color: black;
     margin-top: 1%;
-    min-height: 60vh;
-    min-width: 90%;
+    height: fit-content;
 
 }
 
@@ -102,8 +99,7 @@
     box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
         0 0 40px rgb(0, 255, 255);
     overflow-y: auto;
-    max-height: 60vh;
-    min-height: 60vh;
+    height: fit-content;
     color: #3f99ad;
     background-color: black;
     margin-top: 1%;
@@ -114,7 +110,7 @@
     /* This is KEY: makes the window fill all available space */
     overflow-y: auto;
     /* Makes it scrollable when content is too long */
-    min-height: 0;
+    min-height: fit-content;
     /* A flexbox trick to make scrolling work correctly */
     padding: 10px 5px;
     display: flex;
@@ -227,8 +223,7 @@
     box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
         0 0 40px rgb(0, 255, 255);
     overflow-y: auto;
-    max-height: 60vh;
-    min-height: 60vh;
+    height: fit-content;
     background-color: black;
     margin-top: 1%;
 }
@@ -357,8 +352,9 @@
 
     .cardOneDiv {
         background-color: black;
-        padding: 1%;
-        height: 50%;
+        padding: 2%;
+        padding-left: 5%;
+        height: 100%;
         width: 30%;
         margin-top: 1%;
         display: flex;
@@ -411,12 +407,10 @@
     }
 
     .cardTwo {
-        padding: 1%;
-        width: 0%;
+        padding: 2%;
+        padding-right: 5%;
         display: flex;
-
         justify-content: flex-start;
-
         overflow-y: auto;
         max-height: 60vh;
 
@@ -427,6 +421,8 @@
         width: 90%;
         overflow-y: auto;
         max-height: 60vh;
+                padding-left: 5%;
+
     }
 
     .cardTwo img {

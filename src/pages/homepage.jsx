@@ -23,9 +23,19 @@ export default function homepage() {
     const [reposLoading, setReposLoading] = useState(true);
     const [reposError, setReposError] = useState(null);
 
+    const isInitialMount = useRef(true);
+
     useEffect(() => {
-        messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+        if (isInitialMount.current) {
+            isInitialMount.current = false;
+        } else {
+            messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+        }
     }, [messages]);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     useEffect(() => {
         async function fetchGitHubProfile() {
