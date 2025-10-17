@@ -425,4 +425,22 @@
     .sendButtonCV {
         margin-top: 0%;
     }
+
+.contactContent {
+    display: flex;             /* This is the key: enables side-by-side layout */
+    align-items: center;       /* Vertically centers the list and image */
+    justify-content: space-around; /* Distributes space between and around them */
+    margin-top: 2rem;          /* Adds some space below the "Contact" title */
+}
+
+/* This styles the new image */
+.contactImage {
+    width: 40%;                /* Adjust the size of the image as needed */
+    height: auto;              /* Maintains aspect ratio */
+    border-radius: 10px;       /* Optional: rounds the corners */
+
+    /* Optional: Add a matching glow effect */
+    box-shadow: 0 0 2px black, 0 0 20px black, 0 0 30px rgb(0, 191, 255),
+        0 0 40px rgb(0, 255, 255);
+}
 }

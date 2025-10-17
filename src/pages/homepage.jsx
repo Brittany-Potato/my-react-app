@@ -258,18 +258,25 @@ export default function homepage() {
                 </div>
                 <div className={styles.contactDiv}>
                     <h2 className={styles.title}>Contact</h2>
-                    <div>
+                    <div className={styles.contactContent}>
                         <ul>
                             <li className={styles.listContact}>
-                                LinkedIn: <a href="https://www.linkedin.com/in/brittany-cahill-carnaby-a85294124">Brittany Cahill-Carnaby</a>
+                                LinkedIn: <a href="https://www.linkedin.com/in/brittany-cahill-carnaby-a85294124" target="_blank">Brittany Cahill-Carnaby</a>
                             </li>
                             <li className={styles.listContact}>
-                                Github: <a href="https://github.com/Brittany-Potato">Brittany-Potato</a>
+                                Github: <a href="https://github.com/Brittany-Potato" target="_blank">Brittany-Potato</a>
                             </li>
                             <li className={styles.listContact}>
-                                Facebook Page: <a href="https://www.facebook.com/profile.php?id=61580483732248">BrittanyIT</a>
+                                Facebook Page: <a href="https://www.facebook.com/profile.php?id=61580483732248" target="_blank">BrittanyIT</a>
+                            </li>
+                            <li className={styles.listContact}>
+                                Teams email: <a href="mailto:brittanycc@missionreadyhq.com" target="_blank">Brittany@missionready</a>
+                            </li>
+                            <li className={styles.listContact}>
+                                Business email: <a href="mailto:brittanycc@missionreadyhq.com" target="_blank">BrittanyIT@gmail</a>
                             </li>
                         </ul>
+                        <img src="/images/chester.jpg" alt="Chester" className={styles.contactImage}/>
                     </div>
                 </div>
             </div>
