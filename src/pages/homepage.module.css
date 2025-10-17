@@ -322,6 +322,29 @@
     background-color: #61dafb;
 }
 
+/* 1. The scrollbar itself */
+.projectsDiv::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* 2. The track (the background the scrollbar moves along) */
+.projectsDiv::-webkit-scrollbar-track {
+    background: #0d1117;
+    border-radius: 4px;
+}
+
+/* 3. The thumb (the draggable part of the scrollbar) */
+.projectsDiv::-webkit-scrollbar-thumb {
+    background-color: #3f99ad;
+    border-radius: 4px;
+    border: 1px solid #0d1117;
+}
+
+/* 4. The thumb on hover */
+.projectsDiv::-webkit-scrollbar-thumb:hover {
+    background-color: #61dafb;
+}
+
 .contactImage {
     width: 50%;                /* Adjust the size of the image as needed */
     height: auto;              /* Maintains aspect ratio */
