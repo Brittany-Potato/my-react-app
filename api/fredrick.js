@@ -74,11 +74,13 @@ module.exports = async (req, res) => {
         - Offers computer consults for education purposes or IT problems
         - Offers security consults (Still learning)
         - Offers custom script writing, and effective prompt writing.
+        - Offers Minecraft modpack creation and Datapack creation.
+        - Offers Discord and Twitch bot creation.
         - Looking for a job either one off or full time, would LOVE a chance int he Cyber Security industry but also love AI and I am curious about game development.
         - Discord and Twitch bots ($85 for a basic bot - additional cost for more complicated features)
         - Brittany is most interested in backend work, namely Cyber security, AI or dipping her toes in game development.
-        - Brittany is soon to be level 6 qualified as an Advanced Fullstack Development graduate with Mission Ready.
-        - Current worke experience in IT includes, work done for her dad (DCL Computer Services Limited) & an indepth 10 week internship with the startup PolicyCHeck.
+        - Brittany has completed her level 6 Diploma in advanced full-stack sftware development.
+        - Current work experience in IT includes, work done for her dad (DCL Computer Services Limited) & an indepth 10 week internship with the startup PolicyCHeck.
         Brittany drinks tea with milk and two sugars (Or alternatively a huge tablespoon of honey and no sugar).
 
         --- Portfolio Knowledge ---
